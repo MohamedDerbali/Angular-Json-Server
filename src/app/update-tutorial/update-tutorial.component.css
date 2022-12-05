@@ -1,0 +1,49 @@
+#title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    height: 50px;	
+}
+#description{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    height: 50px;	
+}
+#form{
+    margin-top: 20px;
+}
+#form input{
+    margin-bottom: 10px;
+}
+#form button{
+    margin-top: 10px;
+}
+.addForm{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-control{
+    width: 100%;
+}
+.btn{
+    margin-top: 10px;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #aaa;
+    cursor: pointer;
+    color: white;
+    padding: 2px 10px;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,30 @@
+<div class="main">
+    <input type="text" placeholder="Search by title" name="search" [(ngModel)]="search" class="searchText"/>
+    <button class="searchButton" (click)="searchTutorials($event)">Search</button>
+</div>
+<div class="main">
+    <div class="section">
+        <div class="part-one">
+            <h1>Tutorial List</h1>
+            <div *ngFor="let tutorial of tutorials">
+                <div class="tutorial" (click)="selectTechnlogy(tutorial)">
+                    <h1>{{tutorial.title}}</h1>
+                </div>
+            </div>
+            <button class="btn" (click)="removeAllTutorials()">Remove All</button>
+        </div>
+        <div class="part-two">
+            <h1>Tutorial</h1>
+            <div>
+                <div *ngIf="currentTutorial">
+                <p><span class="descriptionText">Title: </span>{{currentTutorial?.title}}</p>
+                <p><span class="descriptionText">Description: </span>{{currentTutorial?.description}}</p>
+                <button class="btn" (click)="updateTutorial()">Update tutorial</button>
+                </div>
+                <div *ngIf="!currentTutorial">
+                    <p>Please click on a Tutorial...</p>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>
